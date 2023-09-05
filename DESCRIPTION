@@ -1,0 +1,15 @@
+Package: medNet
+Type: Package
+Title: Find the mediation network
+Version: 0.1.1
+Author: 
+Maintainer: Tianwei Yu <yutianwei@cuhk.edu.cn>
+Description: Mediation network analysis for high dimensional data with graph structure.
+Depends: R (>= 4.1.0), grDevices, igraph, abind, caret, doParallel,
+        e1071, energy, foreach, igraph, parallel, pROC, randomForest, foreach, doParallel, parallel
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2022-06-06 08:29:38 UTC; tianw
