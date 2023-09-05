@@ -19,7 +19,7 @@ You can install the released version of medNet from Github with the following co
 # install devtools if necessary
 install.packages('devtools')
 
-# install the CARD package
+# install the medNet package
 devtools::install_github('EddieFua/medNet')
 
 # load package
