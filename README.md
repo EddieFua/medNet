@@ -13,7 +13,7 @@ You can install the released version of medNet from Github with the following co
 ## Dependencies 
 * R version >= 4.1.0.
 * R packages: grDevices, igraph, abind, caret, doParallel,
-        e1071, energy, foreach, igraph, parallel, pROC, randomForest, foreach, doParallel, parallel
+        e1071, energy, foreach, igraph, parallel, pROC, randomForest, foreach, doParallel, parallel, doRNG
         
 ``` r
 # install devtools if necessary
