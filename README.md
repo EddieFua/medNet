@@ -26,3 +26,11 @@ devtools::install_github('EddieFua/medNet')
 library(medNet)
 
 ```
+## Example
+* This example is used to reproduce the experimental results of METABRIC dataset
+``` r
+library(medNet)
+load('~/data/METABRIC/Clean data/cleandata.RData')
+res = medNet::findGlobalNet(response = dat$response,mediator = dat$mediator,exposure = dat$exposure, mediator.network = dat$mediator_network,
+                              H=17,T = 0.6)
+```
