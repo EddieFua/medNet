@@ -113,6 +113,35 @@ Find predictive network for all exposures
 ### Returns:
 - **result**: A list containing all mediation links and functional links associated with a single exposure.
 
+### SimulateData: Simulate Data for Exposure and Mediator Analysis
 
+### Args:
+- **n_exposure**: Number of exposures.
+- **n_mediator**: Number of mediators.
+- **N**: Number of samples.
+- **ba_m**: Average number of edges from exposures; also used as a parameter in igraph for simulating the network.
+- **ba_power**: Power law exponent used in igraph for network simulation.
+- **multi_rate**: Ratio of exposures that have multiple connections to mediators.
+- **poisson_rate**: Parameter of the Poisson distribution used to determine the number of multiple connections.
+- **max_mediator_link**: Maximum number of connections linked to one mediator.
+- **num_link**: Number of direct link of single exposure.
+- **true_exposure**: Number of true exposures.
+
+### Returns:
+- **result**: A list containing 9 simulation datasets, with 3 different sample sizes and 3 different scenarios. Each dataset is structured to represent a unique combination of sample size and scenario, providing a comprehensive testbed for analysis methods.
+
+```{r}
+res = SimulateData(n_exposure = 3,
+      n_mediator = 500,
+      N = c(200,300,400),
+      ba_m = 3,
+      ba_power = 0.5,
+      ba_m = 3,
+      multi_rate = 1,
+      poisson_rate = 10,
+      max_mediator_link = 10,
+      true_exposure = 1,
+      num_link = 2)
+```
 
 
